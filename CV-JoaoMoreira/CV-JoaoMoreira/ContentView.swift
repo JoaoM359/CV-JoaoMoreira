@@ -9,43 +9,79 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            //Background color
-            Color(red: 0.16, green: 0.50, blue: 0.73, opacity: 0.7)
-                .edgesIgnoringSafeArea(.all)
-
-            //Centered Text
+        
+        NavigationView {
             VStack {
-                //Photo
-                Image("joao")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 150, height: 150)
-                    .clipShape(Circle())
-                    .overlay(
-                        Circle().stroke(Color.white, lineWidth: 5)
-                    )
-                // Name
-                Text("João Moreira")
-                    .font(Font.custom("Pacifico-regular", size: 40))
-                    .bold()
-                    .foregroundColor(.white)
-
-                //Job
-                Text("iOS Engineer")
-                    .foregroundColor(.white)
-                    .font(.system(size: 25))
-
-                //Divider()
-
-                //Contact information
-                ContactInfoView(contact: "+351 916 930 348", imageName: "phone.fill")
-                ContactInfoView(contact: "359.joao@gmail.com", imageName: "envelope.fill")
-
-
-            }
+                Spacer()
+                
+                // Header Info
+                HeaderInfoView(imageName: "joao",
+                               name: "João Moreira",
+                               position: "iOS Engineer")
+                
+                //Sections
+                NavigationLink {
+                    AboutSection(title: "",
+                                 iconName: "")
+                } label: {
+                    AboutSection(title: "AboutMe",
+                                 iconName: "phone.fill")
+                    .foregroundStyle(.black)
+                }
+                
+                NavigationLink {
+                    AboutSection(title: "",
+                                 iconName:  "")
+                } label: {
+                    AboutSection(title: "Professional Experience",
+                                 iconName:  "phone.fill")
+                    .foregroundStyle(.black)
+                }
+                
+                NavigationLink {
+                    AboutSection(title: "",
+                                 iconName: "")
+                } label: {
+                    AboutSection(title: "Educational Experience",
+                                 iconName: "phone.fill")
+                    .foregroundStyle(.black)
+                }
+                
+                NavigationLink {
+                    AboutSection(title: "",
+                                 iconName: "")
+                } label: {
+                    AboutSection(title: "Projects",
+                                 iconName: "phone.fill")
+                    .foregroundStyle(.black)
+                }
+                NavigationLink {
+                    AboutSection(title: "",
+                                 iconName: "")
+                } label: {
+                    AboutSection(title: "Languages",
+                                 iconName: "phone.fill")
+                    .foregroundStyle(.black)
+                }
+                
+                NavigationLink {
+                    AboutSection(title: "",
+                                 iconName: "")
+                } label: {
+                    AboutSection(title: "Interests and Hobbies",
+                                 iconName: "phone.fill")
+                    .foregroundStyle(.black)
+                }
+                                
+                Spacer()
+            } //: VSTACK
+            .background(
+                Color(red: 0.16, green: 0.50, blue: 0.73, opacity: 0.7)
+                    .ignoresSafeArea()
+            )
         }
-    }
+        
+    } //: BODY
 }
 
 #Preview {
