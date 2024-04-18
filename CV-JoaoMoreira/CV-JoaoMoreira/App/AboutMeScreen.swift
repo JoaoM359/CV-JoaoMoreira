@@ -26,7 +26,7 @@ struct AboutMeScreen: View {
             } //: VSTACK
             .navigationTitle(title)
             .padding()
-        } //: SCROOL
+        } //: SCROLL
     } //: BODY
 }
 

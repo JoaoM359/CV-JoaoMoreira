@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D67C0BF2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67C0BE2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift */; };
+		5D67C0C12BD1478D00C74CFC /* EducationalExperienceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67C0C02BD1478D00C74CFC /* EducationalExperienceScreen.swift */; };
+		5D67C0C32BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67C0C22BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift */; };
+		5D67C0C52BD1527A00C74CFC /* ProfessionalExperienceChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67C0C42BD1527A00C74CFC /* ProfessionalExperienceChipView.swift */; };
 		5D738E822BC87E4300BFAA6B /* CV_JoaoMoreiraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D738E812BC87E4300BFAA6B /* CV_JoaoMoreiraApp.swift */; };
 		5D738E842BC87E4300BFAA6B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D738E832BC87E4300BFAA6B /* HomeScreen.swift */; };
 		5D738E862BC87E4500BFAA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D738E852BC87E4500BFAA6B /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D67C0BE2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceScreen.swift; sourceTree = "<group>"; };
+		5D67C0C02BD1478D00C74CFC /* EducationalExperienceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalExperienceScreen.swift; sourceTree = "<group>"; };
+		5D67C0C22BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceSectionData.swift; sourceTree = "<group>"; };
+		5D67C0C42BD1527A00C74CFC /* ProfessionalExperienceChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceChipView.swift; sourceTree = "<group>"; };
 		5D738E7E2BC87E4300BFAA6B /* CV-JoaoMoreira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CV-JoaoMoreira.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D738E812BC87E4300BFAA6B /* CV_JoaoMoreiraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_JoaoMoreiraApp.swift; sourceTree = "<group>"; };
 		5D738E832BC87E4300BFAA6B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -42,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D59CDA12BD16E9D00B123D3 /* ProfessionalExperience */ = {
+			isa = PBXGroup;
+			children = (
+				5D67C0BE2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift */,
+			);
+			path = ProfessionalExperience;
+			sourceTree = "<group>";
+		};
 		5D738E752BC87E4300BFAA6B = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +102,7 @@
 				5D738E8F2BC87EA400BFAA6B /* AboutSection.swift */,
 				5DF15D4A2BC8852F00B4EF19 /* HeaderInfoView.swift */,
 				5DF15D532BCEE09500B4EF19 /* AboutMeSectionView.swift */,
+				5D67C0C42BD1527A00C74CFC /* ProfessionalExperienceChipView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -94,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				5DF15D552BCEE1C800B4EF19 /* AboutMeSectionData.swift */,
+				5D67C0C22BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -103,6 +121,8 @@
 			children = (
 				5D738E832BC87E4300BFAA6B /* HomeScreen.swift */,
 				5DF15D512BCEDE8A00B4EF19 /* AboutMeScreen.swift */,
+				5D59CDA12BD16E9D00B123D3 /* ProfessionalExperience */,
+				5D67C0C02BD1478D00C74CFC /* EducationalExperienceScreen.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -185,11 +205,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D738E842BC87E4300BFAA6B /* HomeScreen.swift in Sources */,
+				5D67C0C12BD1478D00C74CFC /* EducationalExperienceScreen.swift in Sources */,
 				5DF15D522BCEDE8A00B4EF19 /* AboutMeScreen.swift in Sources */,
+				5D67C0BF2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift in Sources */,
 				5D738E822BC87E4300BFAA6B /* CV_JoaoMoreiraApp.swift in Sources */,
 				5D738E902BC87EA400BFAA6B /* AboutSection.swift in Sources */,
 				5DF15D542BCEE09500B4EF19 /* AboutMeSectionView.swift in Sources */,
+				5D67C0C52BD1527A00C74CFC /* ProfessionalExperienceChipView.swift in Sources */,
 				5DF15D4B2BC8852F00B4EF19 /* HeaderInfoView.swift in Sources */,
+				5D67C0C32BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift in Sources */,
 				5DF15D562BCEE1C800B4EF19 /* AboutMeSectionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

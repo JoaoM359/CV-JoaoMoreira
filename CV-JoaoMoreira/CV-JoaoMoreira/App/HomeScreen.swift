@@ -22,16 +22,19 @@ struct HomeScreen: View {
                     
                     //Sections
                     NavigationLink {
+                        
                         AboutMeScreen(title: "About Me")
                     } label: {
+                        
                         AboutSection(title: "About Me",
                                      iconName: "info.circle")
                         .foregroundStyle(.black)
                     }
                     
                     NavigationLink {
-                        AboutSection(title: "",
-                                     iconName:  "")
+
+                        ProfessionalExperienceScreen(imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Isep-logo.png/800px-Isep-logo.png", 
+                                                     placeHolderImageName: "laptopcomputer.and.iphone")
                     } label: {
                         AboutSection(title: "Professional Experience",
                                      iconName:  "laptopcomputer.and.iphone")
@@ -39,8 +42,7 @@ struct HomeScreen: View {
                     }
                     
                     NavigationLink {
-                        AboutSection(title: "",
-                                     iconName: "")
+                        EducationalExperienceScreen(imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Isep-logo.png/800px-Isep-logo.png", placeHolderImageName: "laptopcomputer.and.iphone")
                     } label: {
                         AboutSection(title: "Educational Experience",
                                      iconName: "graduationcap")
@@ -89,7 +91,7 @@ struct HomeScreen: View {
                 .navigationTitle("My Digital CV")
                 
                 
-            } //: SCROOL VIEW
+            } //: SCROLL
             .background(
                 Color.baseBlue
                     .ignoresSafeArea()
