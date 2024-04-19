@@ -23,9 +23,11 @@ struct ProfessionalExperienceScreen: View {
                 ]) {
                     ForEach(professionalExperiences, id: \.self) { professionalExperience in
                         NavigationLink  {
-                            EducationalExperienceScreen(imageURL: imageURL, placeHolderImageName: placeHolderImageName)
+                            ProfessionalExperienceDetailScreen(professionalExperience: professionalExperience, placeholderImageName: placeHolderImageName)
                         } label: {
                             ProfessionalExperienceChipView(professionalExperience: professionalExperience, placeHolderImageName: placeHolderImageName)
+                                .background(LinearGradient(colors: [.cyan, .baseBlue], startPoint: .bottom, endPoint: .topLeading))
+                                .clipShape(RoundedRectangle(cornerRadius: 15)).shadow(color: .black, radius: 10, y: 5)
                                 .multilineTextAlignment(.leading)
                         }
                         .foregroundStyle(.black)

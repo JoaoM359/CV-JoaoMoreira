@@ -27,6 +27,7 @@ struct AboutMeScreen: View {
             .navigationTitle(title)
             .padding()
         } //: SCROLL
+        .scrollIndicators(.never)
     } //: BODY
 }
 

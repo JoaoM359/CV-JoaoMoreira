@@ -24,7 +24,7 @@ struct ProfessionalExperienceChipView: View {
                     Image(systemName: placeHolderImageName)
                         .resizable()
                         .scaledToFit()
-                        .foregroundStyle(.baseBlue)
+                        .foregroundStyle(.white)
                     
                 case .success(let image):
                     image
@@ -35,7 +35,7 @@ struct ProfessionalExperienceChipView: View {
                     Image(systemName: placeHolderImageName)
                         .resizable()
                         .scaledToFit()
-                        .foregroundStyle(.baseBlue)
+                        .foregroundStyle(.white)
                 @unknown default:
                     fatalError("Unhandled async image phase")
                 }
@@ -58,10 +58,7 @@ struct ProfessionalExperienceChipView: View {
             } //: VSTACK
             .padding()
             Spacer()
-        } //: HSTACK
-        .background(LinearGradient(colors: [.cyan, .baseBlue], startPoint: .bottom, endPoint: .topLeading))
-        .clipShape(RoundedRectangle(cornerRadius: 15)).shadow(color: .black, radius: 10, y: 5)
-        
+        } //: HSTACK        
     } //: BODY
 }
 

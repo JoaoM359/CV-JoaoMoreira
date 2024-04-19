@@ -92,6 +92,7 @@ struct HomeScreen: View {
                 
                 
             } //: SCROLL
+            .scrollIndicators(.never)
             .background(
                 Color.baseBlue
                     .ignoresSafeArea()
