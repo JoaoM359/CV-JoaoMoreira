@@ -28,8 +28,10 @@ struct ProfessionalExperienceDetailScreen: View {
                         Image(systemName: "info.circle")
                     } //: BUTTON
                     .foregroundStyle(.black)
-                    .sheet(isPresented: $isCompanyInfoPresented, content: {
-                        CompanyInfoView(professionalExperience: professionalExperience, placeholderImageName: placeholderImageName)
+                    .sheet(isPresented: $isCompanyInfoPresented,
+                           content: {
+                        CompanyInfoView(professionalExperience: professionalExperience,
+                                        placeholderImageName: placeholderImageName)
                     })
                     .padding()
                 } //: OVERLAY

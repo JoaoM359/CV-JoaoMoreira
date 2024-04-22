@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0153522BD65B08008B197F /* EducationalExperienceChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0153512BD65B08008B197F /* EducationalExperienceChipView.swift */; };
+		5D0153542BD65D3A008B197F /* EducationalExperienceSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0153532BD65D3A008B197F /* EducationalExperienceSectionData.swift */; };
 		5D59CDA32BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA22BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift */; };
 		5D59CDA52BD27C3C00B123D3 /* MainTecnologiesChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */; };
 		5D59CDA72BD2851E00B123D3 /* CompanyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D0153512BD65B08008B197F /* EducationalExperienceChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalExperienceChipView.swift; sourceTree = "<group>"; };
+		5D0153532BD65D3A008B197F /* EducationalExperienceSectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalExperienceSectionData.swift; sourceTree = "<group>"; };
 		5D59CDA22BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceDetailScreen.swift; sourceTree = "<group>"; };
 		5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTecnologiesChipView.swift; sourceTree = "<group>"; };
 		5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfoView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D0153502BD65A6B008B197F /* EducationalExperience */ = {
+			isa = PBXGroup;
+			children = (
+				5D67C0C02BD1478D00C74CFC /* EducationalExperienceScreen.swift */,
+			);
+			path = EducationalExperience;
+			sourceTree = "<group>";
+		};
 		5D59CDA12BD16E9D00B123D3 /* ProfessionalExperience */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 				5D67C0C42BD1527A00C74CFC /* ProfessionalExperienceChipView.swift */,
 				5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */,
 				5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */,
+				5D0153512BD65B08008B197F /* EducationalExperienceChipView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +134,7 @@
 			children = (
 				5DF15D552BCEE1C800B4EF19 /* AboutMeSectionData.swift */,
 				5D67C0C22BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift */,
+				5D0153532BD65D3A008B197F /* EducationalExperienceSectionData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -131,7 +145,7 @@
 				5D738E832BC87E4300BFAA6B /* HomeScreen.swift */,
 				5DF15D512BCEDE8A00B4EF19 /* AboutMeScreen.swift */,
 				5D59CDA12BD16E9D00B123D3 /* ProfessionalExperience */,
-				5D67C0C02BD1478D00C74CFC /* EducationalExperienceScreen.swift */,
+				5D0153502BD65A6B008B197F /* EducationalExperience */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -214,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D738E842BC87E4300BFAA6B /* HomeScreen.swift in Sources */,
+				5D0153542BD65D3A008B197F /* EducationalExperienceSectionData.swift in Sources */,
 				5D67C0C12BD1478D00C74CFC /* EducationalExperienceScreen.swift in Sources */,
 				5DF15D522BCEDE8A00B4EF19 /* AboutMeScreen.swift in Sources */,
 				5D67C0BF2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift in Sources */,
@@ -223,6 +238,7 @@
 				5DF15D542BCEE09500B4EF19 /* AboutMeSectionView.swift in Sources */,
 				5D59CDA32BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift in Sources */,
 				5D67C0C52BD1527A00C74CFC /* ProfessionalExperienceChipView.swift in Sources */,
+				5D0153522BD65B08008B197F /* EducationalExperienceChipView.swift in Sources */,
 				5DF15D4B2BC8852F00B4EF19 /* HeaderInfoView.swift in Sources */,
 				5D67C0C32BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift in Sources */,
 				5D59CDA52BD27C3C00B123D3 /* MainTecnologiesChipView.swift in Sources */,

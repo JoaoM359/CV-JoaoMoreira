@@ -41,7 +41,7 @@ struct HomeScreen: View {
                     }
                     
                     NavigationLink {
-                        EducationalExperienceScreen(imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Isep-logo.png/800px-Isep-logo.png", placeHolderImageName: "laptopcomputer.and.iphone")
+                        EducationalExperienceScreen(placeHolderImageName: "laptopcomputer.and.iphone")
                     } label: {
                         AboutSection(title: "Educational Experience",
                                      iconName: "graduationcap")

@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfessionalExperienceScreen: View {
     
     // MARK: - Properties
-   
+    
     
     let placeHolderImageName: String
     
@@ -18,21 +18,17 @@ struct ProfessionalExperienceScreen: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                LazyVGrid(columns: [
-                    GridItem(.flexible())
-                ]) {
-                    ForEach(professionalExperiences, id: \.self) { professionalExperience in
-                        NavigationLink  {
-                            ProfessionalExperienceDetailScreen(professionalExperience: professionalExperience, placeholderImageName: placeHolderImageName)
-                        } label: {
-                            ProfessionalExperienceChipView(professionalExperience: professionalExperience, placeHolderImageName: placeHolderImageName)
-                                .background(LinearGradient(colors: [.cyan, .baseBlue], startPoint: .bottom, endPoint: .topLeading))
-                                .clipShape(RoundedRectangle(cornerRadius: 15)).shadow(color: .black, radius: 10, y: 5)
-                                .multilineTextAlignment(.leading)
-                        }
-                        .foregroundStyle(.black)
+                ForEach(professionalExperiences, id: \.self) { professionalExperience in
+                    NavigationLink  {
+                        ProfessionalExperienceDetailScreen(professionalExperience: professionalExperience, placeholderImageName: placeHolderImageName)
+                    } label: {
+                        ProfessionalExperienceChipView(professionalExperience: professionalExperience, placeHolderImageName: placeHolderImageName)
+                            .background(LinearGradient(colors: [.cyan, .baseBlue], startPoint: .bottom, endPoint: .topLeading))
+                            .clipShape(RoundedRectangle(cornerRadius: 15)).shadow(color: .black, radius: 10, y: 5)
+                            .multilineTextAlignment(.leading)
                     }
-                }
+                    .foregroundStyle(.black)
+                } // LOOP
                 .padding()
             } //: SCROLL
             .navigationTitle("Professional Experiences")

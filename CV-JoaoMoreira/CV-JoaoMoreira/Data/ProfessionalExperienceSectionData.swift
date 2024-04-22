@@ -20,6 +20,7 @@ struct ProfessionalExperience: Hashable {
     let companyDescription: String
     let companyWebsite: String
     let companyLogoURLString: String
+    
     var period: String { "\(from)-\(to)" }
     var companyLogoURL: URL? { URL(string: companyLogoURLString) }
     var companyWebsiteURL: URL? { URL(string: companyWebsite) }
