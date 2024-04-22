@@ -49,8 +49,7 @@ struct HomeScreen: View {
                     }
                     
                     NavigationLink {
-                        AboutSection(title: "",
-                                     iconName: "")
+                        ProjectsSectionScreen(placeholderImageName: "book.pages")
                     } label: {
                         AboutSection(title: "Projects",
                                      iconName: "book.pages")

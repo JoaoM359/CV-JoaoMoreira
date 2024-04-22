@@ -26,5 +26,5 @@ struct EducationalExperienceScreen: View {
 }
 
 #Preview {
-    EducationalExperienceScreen(placeHolderImageName: "laptopcomputer.and.iphone")
+    EducationalExperienceScreen(placeHolderImageName: "graduationcap")
 }

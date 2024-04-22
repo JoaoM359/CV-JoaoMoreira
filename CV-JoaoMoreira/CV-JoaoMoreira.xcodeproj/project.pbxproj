@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5D0153522BD65B08008B197F /* EducationalExperienceChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0153512BD65B08008B197F /* EducationalExperienceChipView.swift */; };
 		5D0153542BD65D3A008B197F /* EducationalExperienceSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0153532BD65D3A008B197F /* EducationalExperienceSectionData.swift */; };
+		5D0153562BD6777E008B197F /* ProjectsSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0153552BD6777E008B197F /* ProjectsSectionData.swift */; };
+		5D0153582BD67910008B197F /* ProjectsSectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0153572BD67910008B197F /* ProjectsSectionScreen.swift */; };
+		5D01535A2BD679C2008B197F /* ProjectSectionChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0153592BD679C2008B197F /* ProjectSectionChipView.swift */; };
 		5D59CDA32BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA22BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift */; };
 		5D59CDA52BD27C3C00B123D3 /* MainTecnologiesChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */; };
 		5D59CDA72BD2851E00B123D3 /* CompanyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		5D0153512BD65B08008B197F /* EducationalExperienceChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalExperienceChipView.swift; sourceTree = "<group>"; };
 		5D0153532BD65D3A008B197F /* EducationalExperienceSectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalExperienceSectionData.swift; sourceTree = "<group>"; };
+		5D0153552BD6777E008B197F /* ProjectsSectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsSectionData.swift; sourceTree = "<group>"; };
+		5D0153572BD67910008B197F /* ProjectsSectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsSectionScreen.swift; sourceTree = "<group>"; };
+		5D0153592BD679C2008B197F /* ProjectSectionChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSectionChipView.swift; sourceTree = "<group>"; };
 		5D59CDA22BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceDetailScreen.swift; sourceTree = "<group>"; };
 		5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTecnologiesChipView.swift; sourceTree = "<group>"; };
 		5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfoView.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 				5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */,
 				5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */,
 				5D0153512BD65B08008B197F /* EducationalExperienceChipView.swift */,
+				5D0153592BD679C2008B197F /* ProjectSectionChipView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 				5DF15D552BCEE1C800B4EF19 /* AboutMeSectionData.swift */,
 				5D67C0C22BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift */,
 				5D0153532BD65D3A008B197F /* EducationalExperienceSectionData.swift */,
+				5D0153552BD6777E008B197F /* ProjectsSectionData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 				5DF15D512BCEDE8A00B4EF19 /* AboutMeScreen.swift */,
 				5D59CDA12BD16E9D00B123D3 /* ProfessionalExperience */,
 				5D0153502BD65A6B008B197F /* EducationalExperience */,
+				5D0153572BD67910008B197F /* ProjectsSectionScreen.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -232,8 +241,11 @@
 				5D67C0C12BD1478D00C74CFC /* EducationalExperienceScreen.swift in Sources */,
 				5DF15D522BCEDE8A00B4EF19 /* AboutMeScreen.swift in Sources */,
 				5D67C0BF2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift in Sources */,
+				5D0153582BD67910008B197F /* ProjectsSectionScreen.swift in Sources */,
 				5D59CDA72BD2851E00B123D3 /* CompanyInfoView.swift in Sources */,
 				5D738E822BC87E4300BFAA6B /* CV_JoaoMoreiraApp.swift in Sources */,
+				5D01535A2BD679C2008B197F /* ProjectSectionChipView.swift in Sources */,
+				5D0153562BD6777E008B197F /* ProjectsSectionData.swift in Sources */,
 				5D738E902BC87EA400BFAA6B /* AboutSection.swift in Sources */,
 				5DF15D542BCEE09500B4EF19 /* AboutMeSectionView.swift in Sources */,
 				5D59CDA32BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift in Sources */,
