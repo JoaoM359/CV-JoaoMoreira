@@ -10,16 +10,15 @@ import SwiftUI
 struct EducationalExperienceChipView: View {
     
     // MARK: - Properties
-    let imageURL: String
+    
+    let educationExperience: EducationalExperience
     let placeHolderImageName: String
-    let courseName: String
-    let period: String
     
     // MARK: - Body
     var body: some View {
         
         VStack(alignment: .leading) {
-            AsyncImage(url: URL(string: imageURL)) { phase in
+            AsyncImage(url: educationExperience.institutionLogoURL) { phase in
                 switch phase {
                 case .empty:
                     Image(systemName: placeHolderImageName)
@@ -42,17 +41,16 @@ struct EducationalExperienceChipView: View {
                 }
             }
             
-            Text(courseName)
+            Text(educationExperience.courseName)
                 .font(.title3).bold()
-                .background(.white.opacity(0.6))
-                
             
-            Text(period)
+            Text("Period: ").bold() + Text(educationExperience.period)
                 .font(.body)
-                .background(.white.opacity(0.6))
-                
+            
+            Text("\nDescription: ").bold() + Text(educationExperience.description)
+            
         }.padding()
-       
+        
         
     }
 }
@@ -60,6 +58,6 @@ struct EducationalExperienceChipView: View {
 // MARK: - Preview
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
-    EducationalExperienceChipView(imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Isep-logo.png/800px-Isep-logo.png",
-                                  placeHolderImageName: "laptopcomputer.and.iphone", courseName: "Degree in Informatics Engineering", period: "2019-2020")
+    EducationalExperienceChipView(educationExperience: educationalExperiences[0],
+                                  placeHolderImageName: "laptopcomputer.and.iphone")
 }

@@ -16,13 +16,10 @@ struct EducationalExperienceScreen: View {
     var body: some View {
         ScrollView {
             ForEach(educationalExperiences, id: \.self) { educationExperence in
-                EducationalExperienceChipView(imageURL: educationExperence.institutionLogoURLString,
-                                              placeHolderImageName: placeHolderImageName,
-                                              courseName: educationExperence.courseName,
-                                              period: educationExperence.period)
+                EducationalExperienceChipView(educationExperience: educationExperence,
+                                              placeHolderImageName: placeHolderImageName)
                 Divider()
             } //: LOOP
-            
         } //: SCROLL
         .navigationTitle("Educational EXperiences")
     } //: BODY
