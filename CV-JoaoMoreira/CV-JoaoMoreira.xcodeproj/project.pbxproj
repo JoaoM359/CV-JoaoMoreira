@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D59CDA32BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA22BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift */; };
 		5D59CDA52BD27C3C00B123D3 /* MainTecnologiesChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */; };
+		5D59CDA72BD2851E00B123D3 /* CompanyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */; };
 		5D67C0BF2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67C0BE2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift */; };
 		5D67C0C12BD1478D00C74CFC /* EducationalExperienceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67C0C02BD1478D00C74CFC /* EducationalExperienceScreen.swift */; };
 		5D67C0C32BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67C0C22BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		5D59CDA22BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceDetailScreen.swift; sourceTree = "<group>"; };
 		5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTecnologiesChipView.swift; sourceTree = "<group>"; };
+		5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfoView.swift; sourceTree = "<group>"; };
 		5D67C0BE2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceScreen.swift; sourceTree = "<group>"; };
 		5D67C0C02BD1478D00C74CFC /* EducationalExperienceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalExperienceScreen.swift; sourceTree = "<group>"; };
 		5D67C0C22BD14AC700C74CFC /* ProfessionalExperienceSectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalExperienceSectionData.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				5DF15D532BCEE09500B4EF19 /* AboutMeSectionView.swift */,
 				5D67C0C42BD1527A00C74CFC /* ProfessionalExperienceChipView.swift */,
 				5D59CDA42BD27C3C00B123D3 /* MainTecnologiesChipView.swift */,
+				5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				5D67C0C12BD1478D00C74CFC /* EducationalExperienceScreen.swift in Sources */,
 				5DF15D522BCEDE8A00B4EF19 /* AboutMeScreen.swift in Sources */,
 				5D67C0BF2BD13EE000C74CFC /* ProfessionalExperienceScreen.swift in Sources */,
+				5D59CDA72BD2851E00B123D3 /* CompanyInfoView.swift in Sources */,
 				5D738E822BC87E4300BFAA6B /* CV_JoaoMoreiraApp.swift in Sources */,
 				5D738E902BC87EA400BFAA6B /* AboutSection.swift in Sources */,
 				5DF15D542BCEE09500B4EF19 /* AboutMeSectionView.swift in Sources */,

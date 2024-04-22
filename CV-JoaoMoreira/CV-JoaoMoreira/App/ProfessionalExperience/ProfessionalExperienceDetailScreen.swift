@@ -29,7 +29,7 @@ struct ProfessionalExperienceDetailScreen: View {
                     } //: BUTTON
                     .foregroundStyle(.black)
                     .sheet(isPresented: $isCompanyInfoPresented, content: {
-                        EducationalExperienceScreen(imageURL: "", placeHolderImageName: "")
+                        CompanyInfoView(professionalExperience: professionalExperience, placeholderImageName: placeholderImageName)
                     })
                     .padding()
                 } //: OVERLAY
@@ -41,18 +41,22 @@ struct ProfessionalExperienceDetailScreen: View {
                 Text("\nMain Reponsabilities:").font(.title3.bold())
                 
                 ForEach(professionalExperience.mainResponsabilities, id: \.self) { responsability in
-                    Text("- " + responsability)
+                    Text("- \(responsability)")
                 }
                 
                 Text("\nMain Technologies:").font(.title3.bold())
                 
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                LazyVGrid(columns: [GridItem(.flexible()),
+                                    GridItem(.flexible()),
+                                    GridItem(.flexible())],
+                          spacing: 10) {
+                    
                     ForEach(professionalExperience.mainTechnologies, id: \.self) { technology in
                         MainTecnologiesChipView(tecnologyName: technology)
                             .frame(width: 100,height: 100)
                     }
                 }
-                .padding()
+                          .padding()
             } //: VSTACK
             .padding()
         } //: SCROLL
@@ -63,5 +67,5 @@ struct ProfessionalExperienceDetailScreen: View {
 }
 
 #Preview {
-    ProfessionalExperienceDetailScreen(professionalExperience: professionalExperiences[0], placeholderImageName: "laptopcomputer.and.iphone")
+    ProfessionalExperienceDetailScreen(professionalExperience: professionalExperiences[1], placeholderImageName: "laptopcomputer.and.iphone")
 }

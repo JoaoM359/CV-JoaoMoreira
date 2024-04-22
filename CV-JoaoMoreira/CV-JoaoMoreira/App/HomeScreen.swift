@@ -33,8 +33,7 @@ struct HomeScreen: View {
                     
                     NavigationLink {
 
-                        ProfessionalExperienceScreen(imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Isep-logo.png/800px-Isep-logo.png", 
-                                                     placeHolderImageName: "laptopcomputer.and.iphone")
+                        ProfessionalExperienceScreen(placeHolderImageName: "laptopcomputer.and.iphone")
                     } label: {
                         AboutSection(title: "Professional Experience",
                                      iconName:  "laptopcomputer.and.iphone")

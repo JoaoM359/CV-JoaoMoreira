@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfessionalExperienceScreen: View {
     
     // MARK: - Properties
-    let imageURL: String
+   
     
     let placeHolderImageName: String
     
@@ -44,6 +44,5 @@ struct ProfessionalExperienceScreen: View {
 }
 
 #Preview {
-    ProfessionalExperienceScreen(imageURL: "https://cdn.icon-icons.com/icons2/3913/PNG/512/farfetch_logo_icon_248576.png",
-                                 placeHolderImageName: "laptopcomputer.and.iphone")
+    ProfessionalExperienceScreen(placeHolderImageName: "laptopcomputer.and.iphone")
 }
