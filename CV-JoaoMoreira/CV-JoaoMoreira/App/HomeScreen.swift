@@ -57,8 +57,7 @@ struct HomeScreen: View {
                     }
                     
                     NavigationLink {
-                        AboutSection(title: "",
-                                     iconName: "")
+                        LanguagesSectionScreen()
                     } label: {
                         AboutSection(title: "Languages",
                                      iconName: "speaker.wave.2.bubble")
