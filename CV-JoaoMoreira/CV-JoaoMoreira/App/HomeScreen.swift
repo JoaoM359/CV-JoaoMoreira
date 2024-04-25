@@ -65,8 +65,7 @@ struct HomeScreen: View {
                     }
                     
                     NavigationLink {
-                        AboutSection(title: "",
-                                     iconName: "")
+                        HobbiesAndInterestsSectionScreen()
                     } label: {
                         AboutSection(title: "Interests and Hobbies",
                                      iconName: "sportscourt")

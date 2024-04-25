@@ -21,7 +21,7 @@ struct EducationalExperienceScreen: View {
                 Divider()
             } //: LOOP
         } //: SCROLL
-        .navigationTitle("Educational EXperiences")
+        .navigationTitle("Educational Experiences")
     } //: BODY
 }
 
