@@ -73,8 +73,7 @@ struct HomeScreen: View {
                     }
                     
                     NavigationLink {
-                        AboutSection(title: "",
-                                     iconName: "")
+                        ContactsSectionScreen()
                     } label: {
                         AboutSection(title: "Contacts",
                                      iconName: "phone")
