@@ -69,5 +69,5 @@ struct ProfessionalExperienceDetailScreen: View {
 }
 
 #Preview {
-    ProfessionalExperienceDetailScreen(professionalExperience: professionalExperiences[1], placeholderImageName: "laptopcomputer.and.iphone")
+    ProfessionalExperienceDetailScreen(professionalExperience: ProfessionalExperience(id: "id", companyName: "name", position: "position", from: "from", to: "to", location: "location", description: "description", mainResponsabilities: ["resp"], mainTechnologies: ["technology"], companyDescription: "companyDescription", companyWebsite: "website", companyLogoURLString: "companyURL"), placeholderImageName: "laptopcomputer.and.iphone")
 }

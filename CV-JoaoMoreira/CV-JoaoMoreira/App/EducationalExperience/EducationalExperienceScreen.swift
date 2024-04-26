@@ -11,15 +11,18 @@ struct EducationalExperienceScreen: View {
     
     // MARK: - Properties
     let placeHolderImageName: String
+    let educationalExperiences: [EducationalExperience]? = Bundle.main.decode("EducationalExperienceData.json")
     
     // MARK: - Body
     var body: some View {
         ScrollView {
-            ForEach(educationalExperiences, id: \.self) { educationExperence in
-                EducationalExperienceChipView(educationExperience: educationExperence,
-                                              placeHolderImageName: placeHolderImageName)
-                Divider()
-            } //: LOOP
+            if let educationalExperiences {
+                ForEach(educationalExperiences) { educationExperence in
+                    EducationalExperienceChipView(educationExperience: educationExperence,
+                                                  placeHolderImageName: placeHolderImageName)
+                    Divider()
+                } //: LOOP
+            }
         } //: SCROLL
         .navigationTitle("Educational Experiences")
     } //: BODY

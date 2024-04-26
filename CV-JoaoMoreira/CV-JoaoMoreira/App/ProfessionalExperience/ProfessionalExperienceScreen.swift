@@ -10,26 +10,27 @@ import SwiftUI
 struct ProfessionalExperienceScreen: View {
     
     // MARK: - Properties
-    
-    
     let placeHolderImageName: String
+    let professionalExperiences: [ProfessionalExperience]? = Bundle.main.decode("ProfessionalExperienceData.json")
     
     // MARK: - Body
     var body: some View {
         NavigationStack {
             ScrollView {
-                ForEach(professionalExperiences, id: \.self) { professionalExperience in
-                    NavigationLink  {
-                        ProfessionalExperienceDetailScreen(professionalExperience: professionalExperience, placeholderImageName: placeHolderImageName)
-                    } label: {
-                        ProfessionalExperienceChipView(professionalExperience: professionalExperience, placeHolderImageName: placeHolderImageName)
-                            .background(LinearGradient(colors: [.cyan, .baseBlue], startPoint: .bottom, endPoint: .topLeading))
-                            .clipShape(RoundedRectangle(cornerRadius: 15)).shadow(color: .black, radius: 10, y: 5)
-                            .multilineTextAlignment(.leading)
-                    }
-                    .foregroundStyle(.black)
-                } // LOOP
-                .padding()
+                if let professionalExperiences {
+                    ForEach(professionalExperiences) { professionalExperience in
+                        NavigationLink  {
+                            ProfessionalExperienceDetailScreen(professionalExperience: professionalExperience, placeholderImageName: placeHolderImageName)
+                        } label: {
+                            ProfessionalExperienceChipView(professionalExperience: professionalExperience, placeHolderImageName: placeHolderImageName)
+                                .background(LinearGradient(colors: [.cyan, .baseBlue], startPoint: .bottom, endPoint: .topLeading))
+                                .clipShape(RoundedRectangle(cornerRadius: 15)).shadow(color: .black, radius: 10, y: 5)
+                                .multilineTextAlignment(.leading)
+                        }
+                        .foregroundStyle(.black)
+                    } // LOOP
+                    .padding()
+                }
             } //: SCROLL
             .navigationTitle("Professional Experiences")
             .navigationBarTitleDisplayMode(.inline)

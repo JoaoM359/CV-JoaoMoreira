@@ -18,6 +18,7 @@ struct EducationalExperienceChipView: View {
     var body: some View {
         
         VStack(alignment: .leading) {
+            
             AsyncImage(url: educationExperience.institutionLogoURL) { phase in
                 switch phase {
                 case .empty:
@@ -58,6 +59,6 @@ struct EducationalExperienceChipView: View {
 // MARK: - Preview
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
-    EducationalExperienceChipView(educationExperience: educationalExperiences[0],
+    EducationalExperienceChipView(educationExperience: EducationalExperience(id: "1", courseName: "course", description: "desc", institutionName: "institution", from: "from", to: "to", location: "location", institutionLogoURLString: "url"),
                                   placeHolderImageName: "laptopcomputer.and.iphone")
 }

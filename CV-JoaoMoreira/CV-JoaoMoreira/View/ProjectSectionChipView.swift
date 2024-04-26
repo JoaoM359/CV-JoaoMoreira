@@ -59,5 +59,5 @@ struct ProjectSectionChipView: View {
 }
 
 #Preview {
-    ProjectSectionChipView(project: projects[0], placeHolderImageName: "book.pages")
+    ProjectSectionChipView(project: Project(id: "1", projectName: "name", description: "desc", from: "from", to: "to", institutionLogoURLString: "institution"), placeHolderImageName: "book.pages")
 }

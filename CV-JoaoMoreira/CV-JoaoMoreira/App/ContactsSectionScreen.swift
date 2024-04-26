@@ -8,31 +8,32 @@
 import SwiftUI
 
 struct ContactsSectionScreen: View {
+    let contacts: [Contact]? = Bundle.main.decode("ContactsData.json")
+    
     var body: some View {
-        List(contacts) { contact in
-            HStack {
-                Image(contact.contactName.lowercased())
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30)
-                Text(contact.contactName)
-                    .font(.title3)
-                    .bold()
-                Spacer()
-                if(contact.isLink) {
-                    Link(contact.contact, destination: URL(string: contact.contact)!)
-                    
-                    
-                } else {
-                    Text(contact.contact)
-                    
+        if let contacts {
+            List(contacts) { contact in
+                HStack {
+                    Image(contact.contactName.lowercased())
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                    Text(contact.contactName)
+                        .font(.title3)
+                        .bold()
+                    Spacer()
+                    if(contact.isLink) {
+                        Link(contact.contact, destination: URL(string: contact.contact)!)
+                        
+                        
+                    } else {
+                        Text(contact.contact)
+                        
+                    }
                 }
-                
             }
-            
-            
+            .navigationTitle("Contacts")
         }
-        .navigationTitle("Contacts")
     }
 }
 

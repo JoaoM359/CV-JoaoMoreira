@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "sectionTitle": "Who am I?",
+        "sectionBody": "My name is João Moreira, I am 23 years old and I'm from Porto, Portugal.",
+        "pointingDirection": "right"
+    },
+    {
+        "id": "2",
+        "sectionTitle": "Cool things about me",
+        "sectionBody": "I consider myself a very communicative, sincere, responsible and committed person, easily adaptable and who is neither afraid nor turns his back on a challenge.",
+        "pointingDirection": "left"
+    },
+    {
+        "id": "3",
+        "sectionTitle": "Future plans",
+        "sectionBody": "I intend to start my professional career and learn as much as possible at a technical level in my field. If possible, I would like this area to be Mobile Development (iOS) or similar.\nAt a more advanced stage of my career I would like to venture into Teams and Product Management. \nAbove all, I want to constantly learn and grow.\nThe sky is the limit!",
+        "pointingDirection": "right"
+    }
+]
+

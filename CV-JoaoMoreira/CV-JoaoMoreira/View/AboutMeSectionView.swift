@@ -12,7 +12,7 @@ struct AboutMeSectionView: View {
     // MARK: - Properties
     let aboutMeSectionTitle: String
     let aboutMeSectionBody: String
-    var pointDirection: PointDirection
+    var pointDirection: String
     
     // MARK: - Body
     var body: some View {
@@ -32,7 +32,7 @@ struct AboutMeSectionView: View {
         } //: VSTACK
         
         HStack {
-            if pointDirection == .right {
+            if pointDirection == "right" {
                 image
                 textStack
             } else {
@@ -54,5 +54,5 @@ struct AboutMeSectionView: View {
 // MARK: - Preview
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
-    AboutMeSectionView(aboutMeSectionTitle: "Where I am from?", aboutMeSectionBody: "I am from aaaaa", pointDirection: .right)
+    AboutMeSectionView(aboutMeSectionTitle: "Where I am from?", aboutMeSectionBody: "I am from aaaaa", pointDirection: "right")
 }

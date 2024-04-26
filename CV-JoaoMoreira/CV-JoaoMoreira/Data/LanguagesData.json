@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1",
+    "languageName": "Portuguese",
+    "listeningLevel": "Native",
+    "readingLevel": "Native",
+    "spokenProduction": "Native",
+    "spokenInteraction": "Native",
+    "writing": "Native"
+  },
+  {
+    "id": "2",
+    "languageName": "English",
+    "listeningLevel": "B2",
+    "readingLevel": "B2",
+    "spokenProduction": "B2",
+    "spokenInteraction": "B2",
+    "writing": "B2"
+  }
+]
+

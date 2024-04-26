@@ -65,5 +65,5 @@ struct ProfessionalExperienceChipView: View {
 // MARK: - Preview
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
-    ProfessionalExperienceChipView(professionalExperience: professionalExperiences[0], placeHolderImageName: "laptopcomputer.and.iphone")
+    ProfessionalExperienceChipView(professionalExperience: ProfessionalExperience(id: "id", companyName: "name", position: "position", from: "from", to: "to", location: "location", description: "description", mainResponsabilities: ["resp"], mainTechnologies: ["technology"], companyDescription: "companyDescription", companyWebsite: "website", companyLogoURLString: "companyURL"), placeHolderImageName: "laptopcomputer.and.iphone")
 }

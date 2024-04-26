@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "contactName": "Whatsapp",
+        "contact": "(+351) 916930348",
+        "isLink": false
+    },
+    {
+        "id": "2",
+        "contactName": "Email",
+        "contact": "359.joao@gmail.com",
+        "isLink": false
+    },
+    {
+        "id": "3",
+        "contactName": "LinkedIn",
+        "contact": "www.linkedin.com/in/joaomoreira359",
+        "isLink": true
+    }
+]
+

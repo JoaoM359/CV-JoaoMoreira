@@ -10,19 +10,22 @@ import SwiftUI
 struct AboutMeScreen: View {
     
     let title: String
+    var aboutMeSections: [AboutMeSection]? = Bundle.main.decode("AboutMeData.json")
+    
     var body: some View {
         
         ScrollView {
             
             VStack {
-                
-                ForEach(aboutMeSections, id:\.self){ section in
-                    
-                    AboutMeSectionView(aboutMeSectionTitle: section.sectionTitle,
-                                       aboutMeSectionBody: section.sectionBody,
-                                       pointDirection: section.pointingDirection
-                    )
-                } //: LOOP
+                if let aboutMeSections {
+                    ForEach(aboutMeSections){ section in
+                        
+                        AboutMeSectionView(aboutMeSectionTitle: section.sectionTitle,
+                                           aboutMeSectionBody: section.sectionBody,
+                                           pointDirection: section.pointingDirection
+                        )
+                    } //: LOOP
+                }
             } //: VSTACK
             .navigationTitle(title)
             .padding()

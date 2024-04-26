@@ -10,15 +10,18 @@ import SwiftUI
 struct ProjectsSectionScreen: View {
     
     let placeholderImageName: String
-    
+    let projects: [Project]? = Bundle.main.decode("ProjectsData.json")
     var body: some View {
         ScrollView {
-            ForEach(projects, id: \.self) { project in
-                ProjectSectionChipView(project: project,
-                                       placeHolderImageName: placeholderImageName)
-                                              
-                Divider()
-            } //: LOOP
+            if let projects {
+                
+                ForEach(projects) { project in
+                    ProjectSectionChipView(project: project,
+                                           placeHolderImageName: placeholderImageName)
+                    
+                    Divider()
+                } //: LOOP
+            }
         } //: SCROLL
         .navigationTitle("Educational EXperiences")
     
