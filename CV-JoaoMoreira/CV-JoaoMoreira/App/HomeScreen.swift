@@ -80,6 +80,14 @@ struct HomeScreen: View {
                         .foregroundStyle(.black)
                     }
                     
+                    NavigationLink {
+                        CVDocumentScreen()
+                    } label: {
+                        AboutSection(title: "CV Document",
+                                     iconName: "doc")
+                        .foregroundStyle(.black)
+                    }
+                    
                     Spacer()
                 } //: VSTACK
                 .navigationBarTitleDisplayMode(.inline)
