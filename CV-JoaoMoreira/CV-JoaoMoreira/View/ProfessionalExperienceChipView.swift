@@ -11,6 +11,7 @@ struct ProfessionalExperienceChipView: View {
     // MARK: - Properties
     let professionalExperience: ProfessionalExperience
     let placeHolderImageName: String
+    
     // MARK: - Body
     var body: some View {
         
@@ -36,10 +37,11 @@ struct ProfessionalExperienceChipView: View {
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.white)
+                    
                 @unknown default:
                     fatalError("Unhandled async image phase")
                 }
-            }
+            } //: ASYNC IMAGE
             .frame(width: 100, height: 100)
             .padding(.leading)
             
@@ -49,14 +51,13 @@ struct ProfessionalExperienceChipView: View {
                 
                 Text("Positon: ").font(.title3.bold()) + Text(professionalExperience.position)
                 
-                Text("Period: \(Text(professionalExperience.period).font(.body))")
-                    .font(.title3.bold())
+                Text("Period: ").font(.title3.bold()) + Text(professionalExperience.period)
                 
-                Text("Location: \(Text(professionalExperience.location).font(.body))")
-                    .font(.title3.bold())
+                Text("Location: ").font(.title3.bold()) + Text(professionalExperience.location)
                 
             } //: VSTACK
             .padding()
+            
             Spacer()
         } //: HSTACK        
     } //: BODY
@@ -65,5 +66,18 @@ struct ProfessionalExperienceChipView: View {
 // MARK: - Preview
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
-    ProfessionalExperienceChipView(professionalExperience: ProfessionalExperience(id: "id", companyName: "name", position: "position", from: "from", to: "to", location: "location", description: "description", mainResponsabilities: ["resp"], mainTechnologies: ["technology"], companyDescription: "companyDescription", companyWebsite: "website", companyLogoURLString: "companyURL"), placeHolderImageName: "laptopcomputer.and.iphone")
+    
+    ProfessionalExperienceChipView(professionalExperience: ProfessionalExperience(id: "id",
+                                                                                  companyName: "name",
+                                                                                  position: "position",
+                                                                                  from: "from",
+                                                                                  to: "to",
+                                                                                  location: "location",
+                                                                                  description: "description", 
+                                                                                  mainResponsabilities: ["resp"],
+                                                                                  mainTechnologies: ["technology"],
+                                                                                  companyDescription: "companyDescription",
+                                                                                  companyWebsite: "website",
+                                                                                  companyLogoURLString: "companyURL"),
+                                   placeHolderImageName: "laptopcomputer.and.iphone")
 }

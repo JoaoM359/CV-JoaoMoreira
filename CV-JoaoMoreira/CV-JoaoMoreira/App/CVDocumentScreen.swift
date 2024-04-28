@@ -10,11 +10,12 @@ import PDFKit
 
 struct CVDocumentScreen: View {
     
+    // MARK: - Properties
     private var pdfDoc = PDFDocument()
     
     init() {
         
-        if let url = Bundle.main.url(forResource: "cv", 
+        if let url = Bundle.main.url(forResource: "cv",
                                      withExtension: "pdf"),
            let pdfDocument = PDFDocument(url: url) {
             
@@ -23,15 +24,17 @@ struct CVDocumentScreen: View {
         }
     }
     
+    // MARK: - Body
     var body: some View {
         
-        PDFViewWrapper(showing: pdfDoc)
+        CVDocumentView(showing: pdfDoc)
             .navigationTitle("CV Document")
         
-    }
+    } //: BODY
 }
 
 #Preview {
+    
     CVDocumentScreen()
 }
 

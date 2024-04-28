@@ -28,9 +28,9 @@
 		5D738E842BC87E4300BFAA6B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D738E832BC87E4300BFAA6B /* HomeScreen.swift */; };
 		5D738E862BC87E4500BFAA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D738E852BC87E4500BFAA6B /* Assets.xcassets */; };
 		5D738E892BC87E4500BFAA6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D738E882BC87E4500BFAA6B /* Preview Assets.xcassets */; };
-		5D738E902BC87EA400BFAA6B /* AboutSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D738E8F2BC87EA400BFAA6B /* AboutSection.swift */; };
+		5D738E902BC87EA400BFAA6B /* HomeMenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D738E8F2BC87EA400BFAA6B /* HomeMenuSection.swift */; };
 		5D766E642BDBB0140048235F /* CVDocumentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D766E632BDBB0140048235F /* CVDocumentScreen.swift */; };
-		5D766E6B2BDBD7DF0048235F /* PDFViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D766E6A2BDBD7DF0048235F /* PDFViewWrapper.swift */; };
+		5D766E6B2BDBD7DF0048235F /* CVDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D766E6A2BDBD7DF0048235F /* CVDocumentView.swift */; };
 		5D766E6D2BDD39BC0048235F /* cv.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5D766E6C2BDD39BC0048235F /* cv.pdf */; };
 		5D8B3D582BDA9AAE00C7FF2D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8B3D572BDA9AAE00C7FF2D /* Contact.swift */; };
 		5D8B3D5A2BDA9CB000C7FF2D /* ContactsSectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8B3D592BDA9CB000C7FF2D /* ContactsSectionScreen.swift */; };
@@ -70,9 +70,9 @@
 		5D738E832BC87E4300BFAA6B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		5D738E852BC87E4500BFAA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D738E882BC87E4500BFAA6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5D738E8F2BC87EA400BFAA6B /* AboutSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSection.swift; sourceTree = "<group>"; };
+		5D738E8F2BC87EA400BFAA6B /* HomeMenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuSection.swift; sourceTree = "<group>"; };
 		5D766E632BDBB0140048235F /* CVDocumentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDocumentScreen.swift; sourceTree = "<group>"; };
-		5D766E6A2BDBD7DF0048235F /* PDFViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewWrapper.swift; sourceTree = "<group>"; };
+		5D766E6A2BDBD7DF0048235F /* CVDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDocumentView.swift; sourceTree = "<group>"; };
 		5D766E6C2BDD39BC0048235F /* cv.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cv.pdf; sourceTree = "<group>"; };
 		5D8B3D572BDA9AAE00C7FF2D /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		5D8B3D592BDA9CB000C7FF2D /* ContactsSectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsSectionScreen.swift; sourceTree = "<group>"; };
@@ -156,14 +156,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5D766E672BDBB1C50048235F /* PDFDocument */ = {
-			isa = PBXGroup;
-			children = (
-				5D766E6A2BDBD7DF0048235F /* PDFViewWrapper.swift */,
-			);
-			path = PDFDocument;
-			sourceTree = "<group>";
-		};
 		5D8B3D5C2BDAA22E00C7FF2D /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,8 +174,7 @@
 		5DF15D492BC8851A00B4EF19 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5D766E672BDBB1C50048235F /* PDFDocument */,
-				5D738E8F2BC87EA400BFAA6B /* AboutSection.swift */,
+				5D738E8F2BC87EA400BFAA6B /* HomeMenuSection.swift */,
 				5DF15D4A2BC8852F00B4EF19 /* HeaderInfoView.swift */,
 				5DF15D532BCEE09500B4EF19 /* AboutMeSectionView.swift */,
 				5D67C0C42BD1527A00C74CFC /* ProfessionalExperienceChipView.swift */,
@@ -191,6 +182,7 @@
 				5D59CDA62BD2851E00B123D3 /* CompanyInfoView.swift */,
 				5D0153512BD65B08008B197F /* EducationalExperienceChipView.swift */,
 				5D0153592BD679C2008B197F /* ProjectSectionChipView.swift */,
+				5D766E6A2BDBD7DF0048235F /* CVDocumentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -292,13 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D8B3D612BDAA67200C7FF2D /* AboutMeData.json in Resources */,
-				5D766E6D2BDD39BC0048235F /* cv.pdf in Resources */,
 				5D8B3D632BDAA8CE00C7FF2D /* ProfessionalExperienceData.json in Resources */,
 				5D8B3D652BDAB17800C7FF2D /* EducationalExperienceData.json in Resources */,
 				5D617CFA2BDAB59D00353816 /* ProjectsData.json in Resources */,
 				5DA1786D2BDBA9A700A7FD8E /* LanguagesData.json in Resources */,
 				5DA1786F2BDBAAA700A7FD8E /* HobbiesAndInterestsData.json in Resources */,
 				5DA178712BDBABCF00A7FD8E /* ContactsData.json in Resources */,
+				5D766E6D2BDD39BC0048235F /* cv.pdf in Resources */,
 				5D738E892BC87E4500BFAA6B /* Preview Assets.xcassets in Resources */,
 				5D738E862BC87E4500BFAA6B /* Assets.xcassets in Resources */,
 			);
@@ -325,10 +317,10 @@
 				5D01535A2BD679C2008B197F /* ProjectSectionChipView.swift in Sources */,
 				5D766E642BDBB0140048235F /* CVDocumentScreen.swift in Sources */,
 				5D0153562BD6777E008B197F /* Project.swift in Sources */,
-				5D738E902BC87EA400BFAA6B /* AboutSection.swift in Sources */,
+				5D738E902BC87EA400BFAA6B /* HomeMenuSection.swift in Sources */,
 				5D0153602BD7E5EB008B197F /* HobbiesAndInterests.swift in Sources */,
 				5DF15D542BCEE09500B4EF19 /* AboutMeSectionView.swift in Sources */,
-				5D766E6B2BDBD7DF0048235F /* PDFViewWrapper.swift in Sources */,
+				5D766E6B2BDBD7DF0048235F /* CVDocumentView.swift in Sources */,
 				5D59CDA32BD1725E00B123D3 /* ProfessionalExperienceDetailScreen.swift in Sources */,
 				5D67C0C52BD1527A00C74CFC /* ProfessionalExperienceChipView.swift in Sources */,
 				5D01535E2BD67CFD008B197F /* Language.swift in Sources */,

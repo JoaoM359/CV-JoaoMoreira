@@ -16,5 +16,3 @@ struct Language: Identifiable, Codable {
     let spokenInteraction: String
     let writing: String
 }
-
-

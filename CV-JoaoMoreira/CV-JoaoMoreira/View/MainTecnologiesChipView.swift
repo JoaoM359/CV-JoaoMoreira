@@ -21,14 +21,14 @@ struct MainTecnologiesChipView: View {
                 .scaledToFit()
             Text(tecnologyName)
                 .font(.body).bold()
-        }
+        } //: VSTACK
         .clipShape(RoundedRectangle(cornerRadius: 10))
-        
-    }
+    } //: BODY
 }
 
 // MARK: - Preview
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
+    
     MainTecnologiesChipView(tecnologyName: "Swift")
 }

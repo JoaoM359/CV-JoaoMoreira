@@ -9,33 +9,46 @@ import SwiftUI
 
 struct LanguagesSectionScreen: View {
     
-    let languages: [Language]? = Bundle.main.decode("LanguagesData.json")
+    // MARK: - Properties
+    private let languages: [Language]? = Bundle.main.decode("LanguagesData.json")
+    
+    // MARK: - Body
     var body: some View {
+        
         ScrollView {
+            
             if let languages {
+                
                 ForEach(languages) { language in
+                    
                     HStack{
                         
                         VStack {
+                            
                             Image(language.languageName.lowercased())
                                 .resizable().scaledToFit()
                                 .frame(width: 100)
+                            
                             Text(language.languageName)
-                        }
-                        
+                        } //: VSTACK
                         
                         VStack(alignment: .leading) {
+                            
                             Text("Listening: \(language.listeningLevel)")
+                            
                             Text("Reading: \(language.readingLevel)")
+                            
                             Text("Spoken production: \(language.spokenProduction)")
+                            
                             Text("Spoken interaction: \(language.spokenInteraction)")
+                            
                             Text("Writing: \(language.writing)")
                             
-                        }
+                        } //: VSTACK
+                        
                         Spacer()
                     } //: HSTACK
                     .padding()
-                    
                 } //: LOOP
             }
         } //: SCROLL
@@ -43,5 +56,6 @@ struct LanguagesSectionScreen: View {
 }
 
 #Preview {
+    
     LanguagesSectionScreen()
 }

@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct ContactsSectionScreen: View {
-    let contacts: [Contact]? = Bundle.main.decode("ContactsData.json")
     
+    // MARK: - Properties
+    private let contacts: [Contact]? = Bundle.main.decode("ContactsData.json")
+    
+    // MARK: - Body
     var body: some View {
+        
         if let contacts {
+            
             List(contacts) { contact in
+                
                 HStack {
                     Image(contact.contactName.lowercased())
                         .resizable()
@@ -30,13 +36,14 @@ struct ContactsSectionScreen: View {
                         Text(contact.contact)
                         
                     }
-                }
-            }
+                } //: HSTACK
+            } //: LIST
             .navigationTitle("Contacts")
         }
-    }
+    } //: BODY
 }
 
 #Preview {
+    
     ContactsSectionScreen()
 }

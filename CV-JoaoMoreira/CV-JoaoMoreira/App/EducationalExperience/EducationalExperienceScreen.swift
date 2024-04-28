@@ -11,13 +11,17 @@ struct EducationalExperienceScreen: View {
     
     // MARK: - Properties
     let placeHolderImageName: String
-    let educationalExperiences: [EducationalExperience]? = Bundle.main.decode("EducationalExperienceData.json")
+    private let educationalExperiences: [EducationalExperience]? = Bundle.main.decode("EducationalExperienceData.json")
     
     // MARK: - Body
     var body: some View {
+        
         ScrollView {
+            
             if let educationalExperiences {
+                
                 ForEach(educationalExperiences) { educationExperence in
+                    
                     EducationalExperienceChipView(educationExperience: educationExperence,
                                                   placeHolderImageName: placeHolderImageName)
                     Divider()
@@ -29,5 +33,6 @@ struct EducationalExperienceScreen: View {
 }
 
 #Preview {
+    
     EducationalExperienceScreen(placeHolderImageName: "graduationcap")
 }

@@ -9,21 +9,24 @@ import SwiftUI
 
 struct AboutMeScreen: View {
     
+    // MARK: - Properties
     let title: String
     var aboutMeSections: [AboutMeSection]? = Bundle.main.decode("AboutMeData.json")
     
+    // MARK: - Body
     var body: some View {
         
         ScrollView {
             
             VStack {
+                
                 if let aboutMeSections {
+                    
                     ForEach(aboutMeSections){ section in
                         
                         AboutMeSectionView(aboutMeSectionTitle: section.sectionTitle,
                                            aboutMeSectionBody: section.sectionBody,
-                                           pointDirection: section.pointingDirection
-                        )
+                                           pointDirection: section.pointingDirection)
                     } //: LOOP
                 }
             } //: VSTACK
@@ -35,5 +38,6 @@ struct AboutMeScreen: View {
 }
 
 #Preview {
+    
     AboutMeScreen(title: "About Me")
 }

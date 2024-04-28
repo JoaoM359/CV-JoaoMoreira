@@ -10,7 +10,6 @@ import SwiftUI
 struct EducationalExperienceChipView: View {
     
     // MARK: - Properties
-    
     let educationExperience: EducationalExperience
     let placeHolderImageName: String
     
@@ -21,6 +20,7 @@ struct EducationalExperienceChipView: View {
             
             AsyncImage(url: educationExperience.institutionLogoURL) { phase in
                 switch phase {
+                    
                 case .empty:
                     Image(systemName: placeHolderImageName)
                         .resizable()
@@ -37,10 +37,11 @@ struct EducationalExperienceChipView: View {
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.baseBlue)
+                    
                 @unknown default:
                     fatalError("Unhandled async image phase")
                 }
-            }
+            } //: ASYNC IMAGE
             
             Text(educationExperience.courseName)
                 .font(.title3).bold()
@@ -50,15 +51,22 @@ struct EducationalExperienceChipView: View {
             
             Text("\nDescription: ").bold() + Text(educationExperience.description)
             
-        }.padding()
-        
-        
-    }
+        } //: VSTACK
+        .padding()
+    } //: BODY
 }
 
 // MARK: - Preview
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
-    EducationalExperienceChipView(educationExperience: EducationalExperience(id: "1", courseName: "course", description: "desc", institutionName: "institution", from: "from", to: "to", location: "location", institutionLogoURLString: "url"),
+    
+    EducationalExperienceChipView(educationExperience: EducationalExperience(id: "1",
+                                                                             courseName: "course",
+                                                                             description: "desc",
+                                                                             institutionName: "institution",
+                                                                             from: "from",
+                                                                             to: "to",
+                                                                             location: "location",
+                                                                             institutionLogoURLString: "url"),
                                   placeHolderImageName: "laptopcomputer.and.iphone")
 }

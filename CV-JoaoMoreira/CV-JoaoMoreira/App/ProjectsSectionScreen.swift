@@ -9,13 +9,19 @@ import SwiftUI
 
 struct ProjectsSectionScreen: View {
     
+    // MARK: - Properties
     let placeholderImageName: String
     let projects: [Project]? = Bundle.main.decode("ProjectsData.json")
+    
+    // MARK: - Body
     var body: some View {
+        
         ScrollView {
+            
             if let projects {
                 
                 ForEach(projects) { project in
+                    
                     ProjectSectionChipView(project: project,
                                            placeHolderImageName: placeholderImageName)
                     
@@ -24,10 +30,10 @@ struct ProjectsSectionScreen: View {
             }
         } //: SCROLL
         .navigationTitle("Educational EXperiences")
-    
-    }
+    } //: BODY
 }
 
 #Preview {
+    
     ProjectsSectionScreen(placeholderImageName: "book.pages")
 }

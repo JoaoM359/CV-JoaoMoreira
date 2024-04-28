@@ -9,12 +9,16 @@ import SwiftUI
 
 struct CompanyInfoView: View {
     
+    // MARK: - Properties
     let professionalExperience: ProfessionalExperience
     let placeholderImageName: String
     
+    // MARK: - Body
     var body: some View {
+        
         VStack(alignment: .leading) {
-            Text("About \(professionalExperience.companyName):").font(.title3).bold()
+            Text("About \(professionalExperience.companyName):")
+                .font(.title3).bold()
             Text(professionalExperience.companyDescription)
         } //: VSTACK
         .background(
@@ -38,16 +42,29 @@ struct CompanyInfoView: View {
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.white)
+                    
                 @unknown default:
                     fatalError("Unhandled async image phase")
                 }
-            }.opacity(0.2)
+            } //: ASYNC IMAGE
+                .opacity(0.2)
         )
         .padding()
     } //: BODY
 }
 
 #Preview {
-    CompanyInfoView(professionalExperience: ProfessionalExperience(id: "id", companyName: "name", position: "position", from: "from", to: "to", location: "location", description: "description", mainResponsabilities: ["resp"], mainTechnologies: ["technology"], companyDescription: "companyDescription", companyWebsite: "website", companyLogoURLString: "companyURL"),
+    CompanyInfoView(professionalExperience: ProfessionalExperience(id: "id",
+                                                                   companyName: "name",
+                                                                   position: "position",
+                                                                   from: "from",
+                                                                   to: "to",
+                                                                   location: "location",
+                                                                   description: "description",
+                                                                   mainResponsabilities: ["resp"],
+                                                                   mainTechnologies: ["technology"],
+                                                                   companyDescription: "companyDescription",
+                                                                   companyWebsite: "website",
+                                                                   companyLogoURLString: "companyURL"),
                     placeholderImageName: "laptopcomputer.and.iphone")
 }
