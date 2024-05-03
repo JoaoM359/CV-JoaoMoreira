@@ -9,7 +9,7 @@ import Foundation
 
 enum NavigationTitles: String {
     case homeScreen = "My Digital CV"
-    case aboutMe = "AboutMe"
+    case aboutMe = "About Me"
     case professionalExperience = "Professional Experience"
     case educationalExperience = "Educational Experience"
     case projects = "Projects"
