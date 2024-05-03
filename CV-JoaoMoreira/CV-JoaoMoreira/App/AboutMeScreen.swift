@@ -10,8 +10,8 @@ import SwiftUI
 struct AboutMeScreen: View {
     
     // MARK: - Properties
-    let title: String
-    var aboutMeSections: [AboutMeSection]? = Bundle.main.decode("AboutMeData.json")
+    let navigationTitle: NavigationTitles
+    var aboutMeSections: [AboutMeSection]? = Bundle.main.decode(.aboutMe)
     
     // MARK: - Body
     var body: some View {
@@ -30,7 +30,7 @@ struct AboutMeScreen: View {
                     } //: LOOP
                 }
             } //: VSTACK
-            .navigationTitle(title)
+            .navigationTitle(navigationTitle.rawValue)
             .padding()
         } //: SCROLL
         .scrollIndicators(.never)
@@ -39,5 +39,5 @@ struct AboutMeScreen: View {
 
 #Preview {
     
-    AboutMeScreen(title: "About Me")
+    AboutMeScreen(navigationTitle: .aboutMe)
 }

@@ -10,8 +10,10 @@ import SwiftUI
 struct EducationalExperienceScreen: View {
     
     // MARK: - Properties
-    let placeHolderImageName: String
-    private let educationalExperiences: [EducationalExperience]? = Bundle.main.decode("EducationalExperienceData.json")
+    let navigationTitle: NavigationTitles
+    let placeHolderImageName: PlaceholderIcons
+    
+    private let educationalExperiences: [EducationalExperience]? = Bundle.main.decode(.educationalExperience)
     
     // MARK: - Body
     var body: some View {
@@ -28,11 +30,12 @@ struct EducationalExperienceScreen: View {
                 } //: LOOP
             }
         } //: SCROLL
-        .navigationTitle("Educational Experiences")
+        .navigationTitle(navigationTitle.rawValue)
     } //: BODY
 }
 
 #Preview {
     
-    EducationalExperienceScreen(placeHolderImageName: "graduationcap")
+    EducationalExperienceScreen(navigationTitle: .educationalExperience,
+                                placeHolderImageName: .educationalExperience)
 }

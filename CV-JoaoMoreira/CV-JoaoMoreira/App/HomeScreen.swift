@@ -28,71 +28,74 @@ struct HomeScreen: View {
                     //Sections
                     NavigationLink {
                         
-                        AboutMeScreen(title: "About Me")
+                        AboutMeScreen(navigationTitle: .aboutMe)
                     } label: {
                         
-                        HomeMenuSection(title: "About Me",
-                                        iconName: "info.circle")
+                        HomeMenuSection(title: .aboutMe,
+                                        iconName: .aboutMe)
                         .foregroundStyle(.black)
                     }
                     
                     NavigationLink {
                         
-                        ProfessionalExperienceScreen(placeHolderImageName: "laptopcomputer.and.iphone")
+                        ProfessionalExperienceScreen(navigationTitle: .professionalExperience,
+                                                     placeHolderImageName: .professionalExperience)
                     } label: {
                         
-                        HomeMenuSection(title: "Professional Experience",
-                                        iconName:  "laptopcomputer.and.iphone")
+                        HomeMenuSection(title: .professionalExperience,
+                                        iconName:  .professionalExperience)
                         .foregroundStyle(.black)
                     }
                     
                     NavigationLink {
                         
-                        EducationalExperienceScreen(placeHolderImageName: "laptopcomputer.and.iphone")
+                        EducationalExperienceScreen(navigationTitle: .educationalExperience,
+                                                    placeHolderImageName: .educationalExperience)
                     } label: {
                         
-                        HomeMenuSection(title: "Educational Experience",
-                                        iconName: "graduationcap")
+                        HomeMenuSection(title: .educationalExperience,
+                                        iconName: .educationalExperience)
                         .foregroundStyle(.black)
                     }
                     
                     NavigationLink {
                         
-                        ProjectsSectionScreen(placeholderImageName: "book.pages")
+                        ProjectsSectionScreen(navigationTitle: .projects,
+                                              placeholderImageName: .projects)
                     } label: {
                         
-                        HomeMenuSection(title: "Projects",
-                                        iconName: "book.pages")
+                        HomeMenuSection(title: .projects,
+                                        iconName: .projects)
                         .foregroundStyle(.black)
                     }
                     
                     NavigationLink {
                         
-                        LanguagesSectionScreen()
+                        LanguagesSectionScreen(navigationTitle: .languages)
                     } label: {
                         
-                        HomeMenuSection(title: "Languages",
-                                        iconName: "speaker.wave.2.bubble")
+                        HomeMenuSection(title: .languages,
+                                        iconName: .languages)
                         .foregroundStyle(.black)
                     }
                     
                     NavigationLink {
                         
-                        HobbiesAndInterestsSectionScreen()
+                        HobbiesAndInterestsSectionScreen(navigationTitle: .hobbiesAndInterests)
                     } label: {
                         
-                        HomeMenuSection(title: "Interests and Hobbies",
-                                        iconName: "sportscourt")
+                        HomeMenuSection(title: .hobbiesAndInterests,
+                                        iconName: .hobbiesAndInterests)
                         .foregroundStyle(.black)
                     }
                     
                     NavigationLink {
                         
-                        ContactsSectionScreen()
+                        ContactsSectionScreen(navigationTitle: .contacts)
                     } label: {
                         
-                        HomeMenuSection(title: "Contacts",
-                                        iconName: "phone")
+                        HomeMenuSection(title: .contacts,
+                                        iconName: .contacts)
                         .foregroundStyle(.black)
                     }
                     
@@ -101,15 +104,15 @@ struct HomeScreen: View {
                         CVDocumentScreen()
                     } label: {
                         
-                        HomeMenuSection(title: "CV Document",
-                                        iconName: "doc")
+                        HomeMenuSection(title: .cvDocuemnt,
+                                        iconName: .cvDocument)
                         .foregroundStyle(.black)
                     }
                     
                     Spacer()
                 } //: VSTACK
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationTitle("My Digital CV")
+                .navigationTitle(NavigationTitles.homeScreen.rawValue)
             } //: SCROLL
             .scrollIndicators(.never)
             .background(

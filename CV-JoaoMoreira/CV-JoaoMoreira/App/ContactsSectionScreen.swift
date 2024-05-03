@@ -10,7 +10,9 @@ import SwiftUI
 struct ContactsSectionScreen: View {
     
     // MARK: - Properties
-    private let contacts: [Contact]? = Bundle.main.decode("ContactsData.json")
+    let navigationTitle: NavigationTitles
+    
+    private let contacts: [Contact]? = Bundle.main.decode(.contacts)
     
     // MARK: - Body
     var body: some View {
@@ -38,12 +40,12 @@ struct ContactsSectionScreen: View {
                     }
                 } //: HSTACK
             } //: LIST
-            .navigationTitle("Contacts")
+            .navigationTitle(navigationTitle.rawValue)
         }
     } //: BODY
 }
 
 #Preview {
     
-    ContactsSectionScreen()
+    ContactsSectionScreen(navigationTitle: .contacts)
 }

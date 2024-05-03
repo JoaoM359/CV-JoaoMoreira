@@ -10,8 +10,10 @@ import SwiftUI
 struct ProfessionalExperienceScreen: View {
     
     // MARK: - Properties
-    let placeHolderImageName: String
-    private let professionalExperiences: [ProfessionalExperience]? = Bundle.main.decode("ProfessionalExperienceData.json")
+    let navigationTitle: NavigationTitles
+    let placeHolderImageName: PlaceholderIcons
+    
+    private let professionalExperiences: [ProfessionalExperience]? = Bundle.main.decode(.professionalExperience)
     
     // MARK: - Body
     var body: some View {
@@ -47,7 +49,7 @@ struct ProfessionalExperienceScreen: View {
                     .padding()
                 }
             } //: SCROLL
-            .navigationTitle("Professional Experiences")
+            .navigationTitle(navigationTitle.rawValue)
             .navigationBarTitleDisplayMode(.inline)
         } //: NAV STACK
     } //: BODY
@@ -55,5 +57,6 @@ struct ProfessionalExperienceScreen: View {
 
 #Preview {
     
-    ProfessionalExperienceScreen(placeHolderImageName: "laptopcomputer.and.iphone")
+    ProfessionalExperienceScreen(navigationTitle: .professionalExperience,
+                                 placeHolderImageName: .professionalExperience)
 }

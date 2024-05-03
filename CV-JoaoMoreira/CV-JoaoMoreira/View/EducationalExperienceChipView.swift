@@ -11,7 +11,7 @@ struct EducationalExperienceChipView: View {
     
     // MARK: - Properties
     let educationExperience: EducationalExperience
-    let placeHolderImageName: String
+    let placeHolderImageName: PlaceholderIcons
     
     // MARK: - Body
     var body: some View {
@@ -22,7 +22,7 @@ struct EducationalExperienceChipView: View {
                 switch phase {
                     
                 case .empty:
-                    Image(systemName: placeHolderImageName)
+                    Image(systemName: placeHolderImageName.rawValue)
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.baseBlue)
@@ -33,7 +33,7 @@ struct EducationalExperienceChipView: View {
                         .scaledToFit()
                     
                 case .failure:
-                    Image(systemName: placeHolderImageName)
+                    Image(systemName: placeHolderImageName.rawValue)
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.baseBlue)
@@ -68,5 +68,5 @@ struct EducationalExperienceChipView: View {
                                                                              to: "to",
                                                                              location: "location",
                                                                              institutionLogoURLString: "url"),
-                                  placeHolderImageName: "laptopcomputer.and.iphone")
+                                  placeHolderImageName: .educationalExperience)
 }

@@ -10,7 +10,9 @@ import SwiftUI
 struct LanguagesSectionScreen: View {
     
     // MARK: - Properties
-    private let languages: [Language]? = Bundle.main.decode("LanguagesData.json")
+    let navigationTitle: NavigationTitles
+    
+    private let languages: [Language]? = Bundle.main.decode(.languages)
     
     // MARK: - Body
     var body: some View {
@@ -52,10 +54,11 @@ struct LanguagesSectionScreen: View {
                 } //: LOOP
             }
         } //: SCROLL
+        .navigationTitle(navigationTitle.rawValue)
     } //: BODY
 }
 
 #Preview {
     
-    LanguagesSectionScreen()
+    LanguagesSectionScreen(navigationTitle: .languages)
 }

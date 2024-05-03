@@ -11,7 +11,7 @@ struct ProfessionalExperienceDetailScreen: View {
     
     // MARK: - Properties
     let professionalExperience: ProfessionalExperience
-    let placeholderImageName: String
+    let placeholderImageName: PlaceholderIcons
     
     @State private var isCompanyInfoPresented = false
     
@@ -90,5 +90,5 @@ struct ProfessionalExperienceDetailScreen: View {
                                                                                       companyDescription: "companyDescription",
                                                                                       companyWebsite: "website",
                                                                                       companyLogoURLString: "companyURL"),
-                                       placeholderImageName: "laptopcomputer.and.iphone")
+                                       placeholderImageName: .professionalExperience)
 }

@@ -11,7 +11,7 @@ struct CompanyInfoView: View {
     
     // MARK: - Properties
     let professionalExperience: ProfessionalExperience
-    let placeholderImageName: String
+    let placeholderImageName: PlaceholderIcons
     
     // MARK: - Body
     var body: some View {
@@ -27,7 +27,7 @@ struct CompanyInfoView: View {
                 switch phase {
                     
                 case .empty:
-                    Image(systemName: placeholderImageName)
+                    Image(systemName: placeholderImageName.rawValue)
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.white)
@@ -38,7 +38,7 @@ struct CompanyInfoView: View {
                         .scaledToFit()
                     
                 case .failure:
-                    Image(systemName: placeholderImageName)
+                    Image(systemName: placeholderImageName.rawValue)
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.white)
@@ -66,5 +66,5 @@ struct CompanyInfoView: View {
                                                                    companyDescription: "companyDescription",
                                                                    companyWebsite: "website",
                                                                    companyLogoURLString: "companyURL"),
-                    placeholderImageName: "laptopcomputer.and.iphone")
+                    placeholderImageName: .professionalExperience)
 }

@@ -10,8 +10,9 @@ import SwiftUI
 struct ProjectsSectionScreen: View {
     
     // MARK: - Properties
-    let placeholderImageName: String
-    let projects: [Project]? = Bundle.main.decode("ProjectsData.json")
+    let navigationTitle: NavigationTitles
+    let placeholderImageName: PlaceholderIcons
+    let projects: [Project]? = Bundle.main.decode(.projects)
     
     // MARK: - Body
     var body: some View {
@@ -29,11 +30,12 @@ struct ProjectsSectionScreen: View {
                 } //: LOOP
             }
         } //: SCROLL
-        .navigationTitle("Educational EXperiences")
+        .navigationTitle(navigationTitle.rawValue)
     } //: BODY
 }
 
 #Preview {
     
-    ProjectsSectionScreen(placeholderImageName: "book.pages")
+    ProjectsSectionScreen(navigationTitle: .projects,
+                          placeholderImageName: .projects)
 }

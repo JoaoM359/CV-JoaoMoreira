@@ -9,10 +9,10 @@ import Foundation
 
 extension Bundle {
     
-    func decode<T: Codable>(_ file: String) -> T? {
+    func decode<T: Codable>(_ file: DataFiles) -> T? {
         
         // Locate the json file
-        guard let url = self.url(forResource: file, withExtension: nil) else {
+        guard let url = self.url(forResource: file.rawValue, withExtension: nil) else {
             
             print("Failed to locate \(file) in bundle.")
             

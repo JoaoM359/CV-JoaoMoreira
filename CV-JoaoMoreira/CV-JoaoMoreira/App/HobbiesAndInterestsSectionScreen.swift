@@ -10,7 +10,9 @@ import SwiftUI
 struct HobbiesAndInterestsSectionScreen: View {
     
     // MARK: - Properties
-    private let hobbiesAndInterests: [HobbiesAndInterests]? = Bundle.main.decode("HobbiesAndInterestsData.json")
+    let navigationTitle: NavigationTitles
+    
+    private let hobbiesAndInterests: [HobbiesAndInterests]? = Bundle.main.decode(.hobbiesAndInterests)
     
     // MARK: - Body
     var body: some View {
@@ -36,12 +38,12 @@ struct HobbiesAndInterestsSectionScreen: View {
                     }
                 ) //: DISCLOSURE GROUP
             } //: LIST
-            .navigationTitle("Hobbies and Interests")
+            .navigationTitle(navigationTitle.rawValue)
         }
     } //: BODY
 }
 
 #Preview {
     
-    HobbiesAndInterestsSectionScreen()
+    HobbiesAndInterestsSectionScreen(navigationTitle: .hobbiesAndInterests)
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfessionalExperienceChipView: View {
     // MARK: - Properties
     let professionalExperience: ProfessionalExperience
-    let placeHolderImageName: String
+    let placeHolderImageName: PlaceholderIcons
     
     // MARK: - Body
     var body: some View {
@@ -22,7 +22,7 @@ struct ProfessionalExperienceChipView: View {
                 switch phase {
                     
                 case .empty:
-                    Image(systemName: placeHolderImageName)
+                    Image(systemName: placeHolderImageName.rawValue)
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.white)
@@ -33,7 +33,7 @@ struct ProfessionalExperienceChipView: View {
                         .scaledToFit()
                     
                 case .failure:
-                    Image(systemName: placeHolderImageName)
+                    Image(systemName: placeHolderImageName.rawValue)
                         .resizable()
                         .scaledToFit()
                         .foregroundStyle(.white)
@@ -79,5 +79,5 @@ struct ProfessionalExperienceChipView: View {
                                                                                   companyDescription: "companyDescription",
                                                                                   companyWebsite: "website",
                                                                                   companyLogoURLString: "companyURL"),
-                                   placeHolderImageName: "laptopcomputer.and.iphone")
+                                   placeHolderImageName: .professionalExperience)
 }
