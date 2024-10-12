@@ -22,19 +22,26 @@ struct ContactsSectionScreen: View {
             List(contacts) { contact in
                 
                 HStack {
+                    
                     Image(contact.contactName.lowercased())
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30)
+                    
                     Text(contact.contactName)
                         .font(.title3)
                         .bold()
+                    
                     Spacer()
+                    
                     if(contact.isLink) {
-                        Link(contact.contact, destination: URL(string: contact.contact)!)
                         
+                        let linkDisplayName = contact.contact.split(separator: "/").last?.lowercased() ?? contact.contact
+                        
+                        Link(linkDisplayName, destination: URL(string: contact.contact)!)
                         
                     } else {
+                        
                         Text(contact.contact)
                         
                     }

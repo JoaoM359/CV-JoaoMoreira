@@ -23,7 +23,7 @@ struct HomeScreen: View {
                     // Header Info
                     HeaderInfoView(imageName: "joao",
                                    name: "João Moreira",
-                                   position: "iOS Engineer")
+                                   position: "Mobile Engineer")
                     
                     //Sections
                     NavigationLink {

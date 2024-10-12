@@ -1,6 +1,40 @@
 [
     {
         "id": "1",
+        "companyName": "Critical Techworks",
+        "position": "Android Engineer",
+        "from": "07/2024",
+        "to": "current",
+        "location": "Porto, Portugal",
+        "description": "In this experience, I work with Android technologies, focused on the automotive sector. This sector is demanding, respectively, the quality and safety of the system are crucial. This allowed me to have new perspectives on software development, as well as the acquisition of new techniques and development patterns in technologies that I had never had contact with.",
+        "mainResponsabilities": [
+            "Development and maintenance of Android applications with a focus on performance, security and usability.",
+            "Collaboration with multidisciplinary teams to deliver innovative solutions in highly complex projects.",
+            "Use of technologies such as Kotlin, Android SDK, and Jetpack to build intuitive and efficient interfaces.",
+            "Implementation of good development practices, including unit testing, continuous integration (CI/CD) and version control (Git).",
+            "Code optimization and bug resolution to improve application stability and performance.",
+            "Participation in code reviews and agile planning sessions (Scrum/Kanban) to ensure quality and on-time delivery."
+        ],
+        "mainTechnologies": [
+            "Kotlin",
+            "Java",
+            "Android SDK",
+            "Jetpack",
+            "Gradle",
+            "GitHub",
+            "Git",
+            "JUnit",
+            "Dagger Hilt",
+            "Jira",
+            "Confluence",
+            "Android Studio"
+        ],
+        "companyDescription": "Critical Techworks is a joint venture between the BMW Group and Critical Software, focused on developing cutting-edge technologies for the automotive sector. The company creates digital solutions for connected vehicles, smart mobility, and infotainment systems, blending advanced software with engineering excellence. Working in an agile, collaborative environment, CTW is at the forefront of digital transformation in the automotive industry.",
+        "companyWebsite": "https://www.criticaltechworks.com/",
+        "companyLogoURLString": "https://images.teamtailor-cdn.com/images/s3/teamtailor-production/logotype-v3/image_uploads/d3ed9da8-d0a4-4382-a68a-3b52fd87e5eb/original.png"
+    },
+    {
+        "id": "2",
         "companyName": "Farfetch",
         "position": "Mobile iOS Engineer Intern",
         "from": "09/2023",
@@ -24,7 +58,7 @@
         "companyLogoURLString": "https://www.farfetch.com/static/images/logo.png"
     },
     {
-        "id": "2",
+        "id": "3",
         "companyName": "ITSector",
         "position": "Mobile iOS Engineer Intern",
         "from": "03/2023",
