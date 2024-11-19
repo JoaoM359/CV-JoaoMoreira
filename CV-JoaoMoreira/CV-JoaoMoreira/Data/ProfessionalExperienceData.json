@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "companyName": "Critical Techworks",
+        "companyName": "Critical TechWorks",
         "position": "Android Engineer",
         "from": "07/2024",
         "to": "current",
@@ -10,10 +10,10 @@
         "mainResponsabilities": [
             "Development and maintenance of Android applications with a focus on performance, security and usability.",
             "Collaboration with multidisciplinary teams to deliver innovative solutions in highly complex projects.",
-            "Use of technologies such as Kotlin, Android SDK, and Jetpack to build intuitive and efficient interfaces.",
+            "Use of technologies such as Kotlin, Android SDK, and Jetpack Compose to build intuitive and efficient interfaces.",
             "Implementation of good development practices, including unit testing, continuous integration (CI/CD) and version control (Git).",
             "Code optimization and bug resolution to improve application stability and performance.",
-            "Participation in code reviews and agile planning sessions (Scrum/Kanban) to ensure quality and on-time delivery."
+            "Participation in code reviews and agile planning sessions (Scrum) to ensure quality and on-time delivery."
         ],
         "mainTechnologies": [
             "Kotlin",
@@ -29,7 +29,7 @@
             "Confluence",
             "Android Studio"
         ],
-        "companyDescription": "Critical Techworks is a joint venture between the BMW Group and Critical Software, focused on developing cutting-edge technologies for the automotive sector. The company creates digital solutions for connected vehicles, smart mobility, and infotainment systems, blending advanced software with engineering excellence. Working in an agile, collaborative environment, CTW is at the forefront of digital transformation in the automotive industry.",
+        "companyDescription": "Critical TechWorks is a joint venture between the BMW Group and Critical Software, focused on developing cutting-edge technologies for the automotive sector. The company creates digital solutions for connected vehicles, smart mobility, and infotainment systems, blending advanced software with engineering excellence. Working in an agile, collaborative environment, CTW is at the forefront of digital transformation in the automotive industry.",
         "companyWebsite": "https://www.criticaltechworks.com/",
         "companyLogoURLString": "https://images.teamtailor-cdn.com/images/s3/teamtailor-production/logotype-v3/image_uploads/d3ed9da8-d0a4-4382-a68a-3b52fd87e5eb/original.png"
     },
