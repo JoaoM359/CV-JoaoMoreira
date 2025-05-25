@@ -17,8 +17,8 @@ struct MainTecnologiesChipView: View {
         VStack {
             Image(tecnologyName.lowercased())
                 .resizable()
-            
                 .scaledToFit()
+
             Text(tecnologyName)
                 .font(.body).bold()
         } //: VSTACK
